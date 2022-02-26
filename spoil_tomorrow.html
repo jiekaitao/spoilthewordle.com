@@ -35,11 +35,11 @@ var dd = String(today.getDate()+1).padStart(2, '0');
 var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
 var yyyy = today.getFullYear();
 
-today = mm + '/' + dd + '/' + yyyy;
+tomorrow = mm + '/' + dd + '/' + yyyy;
 
-daysDifference = getNumberOfDays("2/25/2022", today);
+daysDifference = getNumberOfDays("2/25/2022", tomorrow);
 
-todaysWord = baseword + daysDifference;
+tomorrowsWord = baseword + daysDifference;
 
 </script>
 </head>
@@ -53,6 +53,6 @@ todaysWord = baseword + daysDifference;
 Yep, that's <b><u>tomorrow's</u> Wordle</b> <a href='https://spoilthewordle.com'>Do this to someone you find despicable.</a><hr>
 
 <script>
-    document.getElementById("spoiled_word").innerHTML = words[baseword];
+    document.getElementById("spoiled_word").innerHTML = words[tomorrowsWord];
 </script>
 </html>
